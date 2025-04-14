@@ -30,11 +30,7 @@ calcularValorTotal = function () {
 
     //5. Mostrar valorSubtotal en el componente lblSubtotal
     // Utilizar mostrarTexto
-    let mensaje=mostrarTexto("lblSubtotal",valorSubtotal);
-
-
-
-
+    let mensajeSubtotal=mostrarTexto("lblSubtotal",valorSubtotal);
         /*
         Caso de prueba: 
             - cantidad: 10
@@ -42,8 +38,12 @@ calcularValorTotal = function () {
             Subtotal esperado: 54
         Si el caso de prueba es exitoso, hacer un commit
      */
+
     //6. Invocar a calcularValorDescuento y lo que devuelve guardar en la variable valorDescuento
+    valorDescuento=calcularValorDescuento(valorSubtotal,porcentajeDescuento);
     //7. Mostrar el resultado en el componente lblDescuento
+    let mensajeDescuento=mostrarTexto("lblDescuento",valorDescuento);
+
     /*
         Caso de prueba: 
             - cantidad: 10 
