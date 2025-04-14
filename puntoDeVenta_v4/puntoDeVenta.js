@@ -122,5 +122,6 @@ limpiar = function () {
     let resultado3=reiniciarResultado("lblValorIVA");
     let resultado4=reiniciarResultado("lblTotal");
     let resultado5=reiniciarResultado("lblResumen");
+    
 }
 /* SI TODO FUNCIONA, HACER UN PUSH */
