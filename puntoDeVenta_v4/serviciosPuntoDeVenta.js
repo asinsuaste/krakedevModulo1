@@ -4,7 +4,7 @@ return valorDescuento;
 }
 
 calcularIVA=function(monto){
-let valorIva=(monto*15)/100;
+let valorIva=(monto*12)/100;
 return valorIva;
 }
 
