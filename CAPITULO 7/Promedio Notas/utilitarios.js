@@ -34,3 +34,8 @@ mostrarTexto = function (idComponente, mensaje) {
     componente = document.getElementById(idComponente);
     componente.innerText = mensaje;
 }
+mostrarImagen=function(idComponente,rutaImagen){
+    let componente;
+    componente=document.getElementById(idComponente);
+    componente.src= rutaImagen;
+}

@@ -7,4 +7,9 @@ calcularPromedioNotas=function(){
     let resultadoFormateado=promedio.toFixed(2);
     let mensaje=mostrarTexto("lblResultado",resultadoFormateado);
     
-}
+    if(resultadoFormateado>7){
+        mostrarImagen("imgFelicitaciones","./kakashi.gif");
+    }else{
+        mostrarImagen("imgFelicitaciones","./8hy.gif");
+    }
+}   
