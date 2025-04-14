@@ -7,9 +7,19 @@ calcularPromedioNotas=function(){
     let resultadoFormateado=promedio.toFixed(2);
     let mensaje=mostrarTexto("lblResultado",resultadoFormateado);
     
-    if(resultadoFormateado>7){
-        mostrarImagen("imgFelicitaciones","./kakashi.gif");
-    }else{
+    if(resultadoFormateado<5 && resultadoFormateado>0){
         mostrarImagen("imgFelicitaciones","./8hy.gif");
+        mostrarTexto("lblResultado","REPROBADO");
+    }else if(resultadoFormateado>=5 && resultadoFormateado<=8){
+        mostrarImagen("imgFelicitaciones","./kakashi.gif");
+        mostrarTexto("lblResultado","BUEN TRABAJO");
+    }else if(resultadoFormateado>8 || resultadoFormateado<=10){
+        mostrarImagen("imgFelicitaciones","./GOKU.gif");
+        mostrarTexto("lblResultado","EXCELENTE");
+    }else{
+        mostrarImagen("imgFelicitaciones","");
+        mostrarTexto("lblResultado","DATOS INCORRECTOS");
+
     }
 }   
+
