@@ -11,11 +11,31 @@ saludo=function(){
     //recuperar el valor de la caja de texto estatura
     let estatura;
      estatura=recuperarFloat("txtEstatura");
-    //mostrar mensaje en pantalla
-    let mensajeBienvenido="Bienvenido "+nombre+" "+apellido;
-    mostrarTexto("ldlResultado", mensajeBienvenido);
-    //mostrar imagen en pantalla
-    mostrarImagen("imgSaludo","./imagenes/kakashi.gif");
-    // limpiar caja de texto nombre
-    mostrarTextoEnCaja("txtNombre","");
 }
+
+//Funcion general para recuperar texto 
+recuperarTexto=function(idComponente){
+    let componente;
+    let valorIngresado;
+    componente=document.getElementById(idComponente);
+    valorIngresado=componente.value;
+    return valorIngresado;
+}
+
+//Funcion general para transformar un string en valor entero
+recuperarInt=function(idComponente){
+    let valorCaja= recuperarTexto(idComponente);
+    let valorEntero= parseInt(valorCaja);
+    return valorEntero;
+}
+
+//Funcion general para transformar un string en valor Float o decimal
+recuperarFloat=function(idComponente){
+    let valorCaja= recuperarTexto(idComponente);
+    let valorFlotante= parseFloat(valorCaja);
+    return valorFlotante;
+}
+
+
+
+
