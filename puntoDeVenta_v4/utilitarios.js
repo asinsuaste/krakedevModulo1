@@ -35,4 +35,22 @@ recuperarFloat = function (idComponente) {
     return valorFlotante;
 }
 
+reiniciarCaja=function(idComponente){
+    let valorInicial;
+    let componente;
+    //dejar la caja de texto vacia
+    componente=document.getElementById(idComponente);
+    valorInicial=componente.value="";
+    return valorInicial
+}
+
+
+reiniciarResultado=function(mensaje){
+    let resultadoInicial;
+    let resultado;
+     //dejar el texto y resultado vacio 
+    resultado=document.getElementById(mensaje);
+    resultado.innerHTML=resultadoInicial=0;
+    return resultadoInicial
+}
 

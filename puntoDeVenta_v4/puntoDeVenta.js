@@ -96,7 +96,7 @@ calcularValorTotal = function () {
        */
             
     //12. Mostrar un resumen en el componente lblResumen, si no existe debe agregarlo
-    let mensajeResumen="Valor a pagar por "+cantidad+" cerveza corona con "+valorDescuento+"% de descuento:"+mensajeTotal;
+    let mensajeResumen="Valor a pagar por "+cantidad+" cerveza corona con "+porcentajeDescuento+"% de descuento:"+valorTotal;
     mostrarTexto("lblResumen",mensajeResumen);
     /*
         Ejemplo: 
@@ -108,8 +108,19 @@ calcularValorTotal = function () {
 limpiar = function () {
     /*
         Dejar todas las cajas de texto con el valor cadena vacía, 0 ó 0.0 según el tipo de dato
+     */
+    let caja1=reiniciarCaja("txtProducto",);
+    let caja2=reiniciarCaja("txtCantidad",);
+    let caja3=reiniciarCaja("txtPrecio",);
+    let caja4=reiniciarCaja("txtPorcentajeDescuento",);
+    /*
         Dejar todos los textos de los montos con el valor 0.0
         Si funciona, hacer un commit
      */
+    let resultado1=reiniciarResultado("lblSubtotal");
+    let resultado2=reiniciarResultado("lblDescuento");
+    let resultado3=reiniciarResultado("lblValorIVA");
+    let resultado4=reiniciarResultado("lblTotal");
+    let resultado5=reiniciarResultado("lblResumen");
 }
 /* SI TODO FUNCIONA, HACER UN PUSH */
